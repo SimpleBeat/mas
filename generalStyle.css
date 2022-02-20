@@ -1,0 +1,76 @@
+/* Clear margins and padding */
+body {
+    margin: 0px;
+    background-color: green;
+}
+
+/* Parralax scrolling behavior */
+.parallaxScrolling {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 3px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.title {
+    font-size: 6rem;
+    color: white;
+    text-shadow: 0px 0px 2px gray;
+    padding-top: 20vh;
+}
+
+.background {
+    transform: translateZ(-7px) scale(6);
+    padding-bottom: 20vh;
+}
+
+.closeBackground {
+    transform: translateZ(-4px) scale(3);
+    padding-bottom: 16vh;
+}
+
+.foreground {
+    transform: translateZ(-2px) scale(1.2);
+}
+
+.ribbon {
+    transform: translateZ(-1px) scale(1.5);
+    padding-bottom: 15vh;
+}
+
+.ribbon2 {
+    transform: translate(-1.2) scale(1.5);
+    padding-top: 16vh;
+}
+
+.ribbon3 {
+    transform: translate(-1.4) scale(1.5);
+    padding-top: 40vh;
+}
+
+.mainText {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: green;
+    color: white;
+    z-index: 5;
+    padding-bottom: 25vh;
+}
+
+.background, .closeBackground, .foreground, .ribbon, .ribbon2, .ribbon3 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
