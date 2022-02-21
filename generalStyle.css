@@ -1,10 +1,11 @@
 /* Clear margins and padding */
 body {
     margin: 0px;
-    background-color: green;
+    background-color: #1060c2;
 }
 
-/* Parralax scrolling behavior */
+/* Parallax scrolling behavior */
+/* Parallax wrapper */
 .parallaxScrolling {
     height: 100vh;
     overflow-y: auto;
@@ -12,6 +13,7 @@ body {
     perspective: 3px;
 }
 
+/* Upper part of the page - the header image */
 header {
     position: relative;
     display: flex;
@@ -22,55 +24,66 @@ header {
     z-index: -1;
 }
 
-.title {
-    font-size: 6rem;
-    color: white;
-    text-shadow: 0px 0px 2px gray;
-    padding-top: 20vh;
-}
-
+/* The sun and the hills */
 .background {
-    transform: translateZ(-7px) scale(6);
-    padding-bottom: 20vh;
+    transform: translateZ(-7px) scale(5.5);
+    padding-bottom: 10vh;
 }
 
+/* The trees */
 .closeBackground {
-    transform: translateZ(-4px) scale(3);
-    padding-bottom: 16vh;
+    transform: translateZ(-4px) scale(2.5);
+    padding-bottom: 7vh;
 }
 
+/* The figure */
 .foreground {
-    transform: translateZ(-2px) scale(1.2);
+    transform: translateZ(-3px) scale(1.5);
+    padding-top: 10vh;
 }
 
-.ribbon {
-    transform: translateZ(-1px) scale(1.5);
-    padding-bottom: 15vh;
-}
-
+/* The ribbons */
 .ribbon2 {
-    transform: translate(-1.2) scale(1.5);
-    padding-top: 16vh;
+    transform: translateZ(-0.8px) scale(1.7);
+    padding-bottom: 1vh;
 }
 
 .ribbon3 {
-    transform: translate(-1.4) scale(1.5);
-    padding-top: 40vh;
+    transform: translateZ(-0.2px) scale(1.2);
+    padding-bottom: 10vh;
 }
 
-.mainText {
-    font-size: 2rem;
-    padding: 2rem;
-    background-color: green;
-    color: white;
-    z-index: 5;
-    padding-bottom: 25vh;
-}
-
-.background, .closeBackground, .foreground, .ribbon, .ribbon2, .ribbon3 {
+/* Common attributes */
+.background, .closeBackground, .foreground, .ribbon2, .ribbon3 {
     position: absolute;
     width: 100%;
     height: auto;
     object-fit: cover;
     z-index: -1;
+}
+
+/* Buttons Block */
+.buttons {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+.button {
+    font-size: 3vw;
+    padding: 2vw;
+    color: blue;
+}
+
+.mainText {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #1060c2;
+    color: white;
+    z-index: 5;
 }
